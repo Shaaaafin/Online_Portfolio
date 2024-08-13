@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")  # sets the website to be wide
 col1, col2 = st.columns(2)  # divides the page into 2 columns
 
 with col1:  # treated as a file. we are working on column 1
-    st.image("images/photo.png")  # shows the indicated image on the page.
+    st.image("photo.png")  # shows the indicated image on the page.
 
 with col2:
     st.title("Ahnaf Hasan Shafin")  # title on the page
