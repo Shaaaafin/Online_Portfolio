@@ -13,6 +13,7 @@ with st.form(key="email"):
     From: {user_email}
     
     {raw_message}
+    
     """
     button = st.form_submit_button("Submit")
     if button:
