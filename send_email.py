@@ -5,9 +5,9 @@ import os
 def send_email(message):
     host = "smtp.gmail.com"
     port = 465
-    username = st.secrets["db_username"]  # Corrected to use square brackets
-    password = st.secrets["db_password"]  # Corrected to use square brackets
-    receiver = "sadf@gmail.com"
+    username = st.write(st.secrets["db_username"])  # Corrected to use square brackets
+    password = st.write(st.secrets["db_password"])  # Corrected to use square brackets
+    receiver = "muffinshafin@gmail.com"
     my_context = ssl.create_default_context()  # to send email securely
 
     with smtplib.SMTP_SSL(host, port, context=my_context) as server:
